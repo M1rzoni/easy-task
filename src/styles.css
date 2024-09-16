@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at top left, #17153B, #2E073F);
+    color: #AD49E1;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
