@@ -1,0 +1,29 @@
+div{
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    text-align: center;
+    align-items: center;
+}
+
+button{
+    gap: 15px;
+    align-items: center;
+    display: flex;
+    width: 150px;
+    padding: 9px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 13px;
+    background-color: #A594F9;
+}
+
+button:hover{
+background-color: #8967B3;
+}
+
+img{
+    width: 2.2rem;
+    border-radius: 50%;
+}
