@@ -1,7 +1,6 @@
 div{
-    width: 30%;
+    width: 40%;
     margin: 0 auto;
-    margin-top: 5rem;
     text-align: center;
     align-items: center;
 }
@@ -10,8 +9,8 @@ button{
     gap: 15px;
     align-items: center;
     display: flex;
-    width: 150px;
-    padding: 9px;
+    width: 185px;
+    padding: 4px;
     border-radius: 10px;
     border: none;
     color: white;

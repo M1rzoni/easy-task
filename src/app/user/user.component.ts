@@ -1,28 +1,19 @@
-import { Component } from '@angular/core';
-import { DUMMY_USERS } from '../dummy-users';
-import { mapToResolve } from '@angular/router';
-
-const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-user',
   standalone: true,
   imports: [],
   templateUrl: './user.component.html',
-  styleUrl: './user.component.css'
+  styleUrl: './user.component.css',
 })
 export class UserComponent {
-  slecetedUser = DUMMY_USERS[randomIndex];
+  @Input() avatar!: string;
+  @Input() name!: string;
 
-  get imagePath(){
-   return './assets/users/'  + this.slecetedUser.avatar;
+  get imagePath() {
+    return './assets/users/' + this.avatar;
   }
 
-  onSelectedUser(){
-
-    const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
-
-    this.slecetedUser = DUMMY_USERS[randomIndex];
-  }
-
+  onSelectedUser() {}
 }
