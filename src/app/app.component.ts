@@ -14,7 +14,7 @@ import { TaskComponent } from './task/task.component';
 export class AppComponent {
   users = DUMMY_USERS;
 
-  selectedUsersId = 'u1';
+  selectedUsersId?: string;
 
   get selectedUsers() {
     return this.users.find((user) => user.id === this.selectedUsersId)!;
