@@ -1,10 +1,11 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Task } from './tasks.model';
+import { CardComponent } from '../../ui/card/card.component';
 
 @Component({
   selector: 'app-tasks',
   standalone: true,
-  imports: [],
+  imports: [CardComponent],
   templateUrl: './tasks.component.html',
   styleUrl: './tasks.component.css',
 })
